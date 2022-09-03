@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 
-class Session {
-    static let shared = Session()
-    var name: String = ""
+class VKSession {
+    static let shared = VKSession()
+    let client_id: String = "51409525"
+    var user_id: String = ""
     var token: String = ""
 
     private init() {}
 }
+
+
+
